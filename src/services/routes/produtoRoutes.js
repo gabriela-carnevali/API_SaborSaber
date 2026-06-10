@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const upload = require("../config/multer");
-const ProdutoController = require("../controllers/ProdutoController");
+const upload = require("../../config/multer");
+const ProdutoController = require("../../controllers/ProdutoController");
 
 // Rotas relativas — serão montadas em '/produtos' pelo router central (routes/index.js)
 router.get('/', ProdutoController.listar);
